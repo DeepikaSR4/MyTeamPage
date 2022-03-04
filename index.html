@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Team</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap');
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif; */
+
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    header{
+        margin: 2em;
+    }
+
+    h1{
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        size: 2.25rem;
+        margin: 1em 0;
+    }
+    .subtitle{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+    .desc{
+        font-size: 0.875rem;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0.6em;
+    }
+
+    .card{
+        width: 40%;
+        /* margin: 0.8em 0; */
+    }
+
+    /* .card:nth-child(2n+1){
+        margin: 0 0 ;
+    } */
+
+    
+
+    .image{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin: 0.4em 0;
+    }
+
+    .card img{
+        width: 100%;
+        aspect-ratio: 7/11;
+    }
+
+    .post{
+        font-size: 0.625rem;
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        text-transform: uppercase;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.875rem;
+    }
+
+    footer div{
+        margin: 0.5em;
+    }
+
+    @media (max-width: 576px){
+        .card:nth-child(2n){
+            margin: 3em 0 0 0;
+        }
+    }
+
+    @media (min-width: 576px){
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 4em;
+        }
+        header div{
+            width: 50%;
+        }
+        .desc{width: 80%;}
+        .grid{
+            margin: 4em;
+        }
+        .card{
+            width: 30%;
+        }
+        .card:nth-child(3n+2){
+            margin: 3em 0 0 0;
+        }
+    }
+
+    @media (min-width: 992px){
+        header{margin: 2em 10em;}
+        .grid{margin: 6em 10em;}
+    }
+
+</style>
+<body>
+    <header>
+        <div>
+            <h1>The creative crew</h1>
+        </div>
+        <div>
+            <div class="subtitle">Who are we</div>
+            <div class="desc">We are a team of creatively diverse, driven, innovative individuals working in various locations around the world.</div>
+        </div>
+    </header>
+    <section class="grid">
+        <div class="card">
+            <div class="image">
+                <img src="images/photo1.png" alt="">
+                <div class="post">Product Owner</div>
+            </div>
+            <div class="name">Bill Mahoney</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/photo2.png" alt="">
+                <div class="post">Art Director</div>
+            </div>
+            <div class="name">Saba Cabrera</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/photo3.png" alt="">
+                <div class="post">Tech Lead</div>
+            </div>
+            <div class="name">Shae Le</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/photo4.png" alt="">
+                <div class="post">UX Designer</div>
+            </div>
+            <div class="name">Skylah Lu</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/photo5.png" alt="">
+                <div class="post">Developer</div>
+            </div>
+            <div class="name">Griff Richards</div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="images/photo6.png" alt="">
+                <div class="post">Developer</div>
+            </div>
+            <div class="name">Stan John</div>
+        </div>
+    </section>
+</body>
+</html>
